@@ -11,4 +11,3 @@ end)
 Gamer:Label("~ Thanks for using Furk Ultra ~");
 
 library:Ready();
-© 2021 GitHub, Inc.
