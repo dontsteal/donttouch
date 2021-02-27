@@ -1,0 +1,60 @@
+local plr,ac,ae,egg,multi = game:GetService("Players").LocalPlayer,false,false,"HotMoms69!",false
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+local w = library:CreateWindow("mama mia")
+local b = w:CreateFolder("gay")
+b:Toggle("Auto Click",function(bool)
+    ac = bool
+    if ac then
+        spawn(function()
+            while ac and wait() do
+                workspace.Events.AddClick:FireServer()
+            end
+        end)
+    end
+end)
+b:Toggle("Auto Open Eggs",function(bool)
+    ae = bool
+end)
+b:Dropdown("Eggs",(function()
+    s = require(game:GetService("ReplicatedStorage").Pets.Eggs)
+    local sex = {}
+    for i,v in pairs(s) do
+        if not table.find(sex,i) then
+            table.insert(sex,i)
+        end
+    end
+    return sex
+end)(),true,function(a)
+    egg = a
+    if workspace.Eggs:FindFirstChild(egg) then
+        plr.Character:SetPrimaryPartCFrame(workspace.Eggs[egg].UIanchor.CFrame)
+    end   
+end)
+b:Toggle("Click multiplier",function(bool)
+    multi = bool
+end)
+b:Button("Destroy Gui",function()
+    for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+        if v:FindFirstChild("HiI'mSexyDon'tTouchMePls") then
+            v:Destroy()
+        end
+    end
+end)
+mt = getrawmetatable(game)
+setreadonly(mt,false)
+old = mt.__namecall
+mt.__namecall = newcclosure(function(self,...)
+    if getnamecallmethod() == "FireServer" and tostring(self) == "AddClick" and multi then
+        for i=1,100 do
+            old(self,...)
+        end
+    end
+    return old(self,...)
+end)
+spawn(function()
+    while wait() do
+        if ae then
+            game:GetService("ReplicatedStorage").RemoteEvents.EggOpened:InvokeServer(egg,"Single")
+        end
+    end
+end)
