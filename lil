@@ -1,0 +1,2 @@
+_G.Key = "https://discord.gg/vQBYBsvWhW"
+loadstring(game:HttpGet(('https://github.com/Mystikfluu/hub/raw/master/main.lua')))()
