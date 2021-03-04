@@ -1,0 +1,258 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local AreaInput = Instance.new("TextBox")
+local TextLabel_2 = Instance.new("TextLabel")
+local attackStatus = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local farmStatus = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Frame.Position = UDim2.new(0.17331022, 0, 0.411547899, 0)
+Frame.Size = UDim2.new(0.29731369, 0, 0.221253082, 0)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.889999986, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.100499533, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "My Dragon Tycoon Script Made by ISReFleX"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+AreaInput.Name = "AreaInput"
+AreaInput.Parent = Frame
+AreaInput.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+AreaInput.BorderSizePixel = 0
+AreaInput.Position = UDim2.new(0.324000001, 0, 0.0900000036, 0)
+AreaInput.Size = UDim2.new(0.350699544, 0, 0.100000001, 0)
+AreaInput.Font = Enum.Font.SourceSans
+AreaInput.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+AreaInput.PlaceholderText = "Select area (1-9)"
+AreaInput.Text = ""
+AreaInput.TextColor3 = Color3.fromRGB(0, 0, 0)
+AreaInput.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.0904441997, 0)
+TextLabel_2.Size = UDim2.new(0.323520839, 0, 0.0983953252, 0)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "AUTO ATTACK:"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+attackStatus.Name = "attackStatus"
+attackStatus.Parent = Frame
+attackStatus.BackgroundColor3 = Color3.fromRGB(26, 107, 22)
+attackStatus.BorderSizePixel = 0
+attackStatus.Position = UDim2.new(0.720000029, 0, 0.0900000036, 0)
+attackStatus.Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+attackStatus.Font = Enum.Font.SourceSansBold
+attackStatus.Text = "START!"
+attackStatus.TextColor3 = Color3.fromRGB(255, 255, 255)
+attackStatus.TextSize = 14.000
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, 0.345857859, 0)
+TextLabel_3.Size = UDim2.new(0.323520839, 0, 0.0983953252, 0)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "AUTO FARM:"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+farmStatus.Name = "farmStatus"
+farmStatus.Parent = Frame
+farmStatus.BackgroundColor3 = Color3.fromRGB(26, 107, 22)
+farmStatus.BorderSizePixel = 0
+farmStatus.Position = UDim2.new(0.320699543, 0, 0.345413655, 0)
+farmStatus.Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+farmStatus.Font = Enum.Font.SourceSansBold
+farmStatus.Text = "START!"
+farmStatus.TextColor3 = Color3.fromRGB(255, 255, 255)
+farmStatus.TextSize = 14.000
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(-0, 0, 0.44600001, 0)
+TextLabel_4.Size = UDim2.new(1, 0, 0.0799999982, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Autofarm will only work later on in the game when you own farms."
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(-0.00291460217, 0, 0.718070984, 0)
+TextLabel_5.Size = UDim2.new(1, 0, 0.124419786, 0)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "SELECT A TYCOON BEFORE STARTING!"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+
+
+
+---- ACTUAL CODE
+
+
+
+
+local mainStuff = Frame
+local areaInput = AreaInput
+
+
+local player = game.Players.LocalPlayer
+_G.AutoAttack = false
+_G.AutoFarm = false
+
+
+function autoAttack()
+	spawn(function()
+		while _G.AutoAttack == true do 
+			wait()
+			local spawnList = game.Workspace.Monster.Area[areaInput.Text]:GetChildren()
+			for i,v in pairs (spawnList)do 
+				if _G.AutoAttack == true and v.Name == "Spawn" then	
+					local mob = v:FindFirstChildWhichIsA("Model")
+					if mob then
+						player.Character:SetPrimaryPartCFrame(mob:FindFirstChild("HumanoidRootPart").CFrame)
+						repeat
+							if not player.Character:FindFirstChild("Tool") then
+								player.Character.Humanoid:EquipTool(player.Backpack.Tool)
+							end
+							player.Character.Tool:Activate()
+							wait(0.5)
+						until mob.Configuration.isDead.Value or _G.AutoAttack == false
+					end
+				end
+			end
+		end
+	end)
+end
+
+
+function autoFarm()
+	spawn(function()
+		game.Players.LocalPlayer.PlayerGui.Core.Telescope.TelescopeLocal.Disabled = true
+		while _G.AutoFarm == true  do 
+			wait(1)
+			for i,v in pairs(game:GetService("Workspace").MyDragonTycoon.Tycoons[player.Team.Name]:GetDescendants()) do
+				if v:IsA("ClickDetector") then
+					fireclickdetector(v)
+				end
+			end
+		end
+	end)
+end
+
+
+local VirtualUser=game:GetService('VirtualUser')
+game:GetService'Players'.LocalPlayer.Idled:Connect(function()
+	VirtualUser:CaptureController()
+	VirtualUser:ClickButton2(Vector2.new())
+end)
+
+
+
+local UserInputService = game:GetService("UserInputService")
+
+local gui = mainStuff
+
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+
+gui.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = gui.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+gui.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+
+
+
+attackStatus.MouseButton1Click:Connect(function()
+	if not _G.AutoAttack then
+		if tonumber(areaInput.Text) then
+			_G.AutoAttack = true
+			autoAttack()
+			attackStatus.BackgroundColor3 = Color3.fromRGB(107,0,2)
+			attackStatus.Text = "STOP!"
+		else
+			areaInput.Text = "Pick an area (1-9)!"
+		end
+	else
+		_G.AutoAttack = false
+		attackStatus.BackgroundColor3 = Color3.fromRGB(26,107,22)
+		attackStatus.Text = "START!"
+
+	end
+end)
+
+farmStatus.MouseButton1Click:Connect(function()
+	if not _G.AutoFarm then
+		_G.AutoFarm = true
+		autoFarm()
+		farmStatus.BackgroundColor3 = Color3.fromRGB(107,0,2)
+		farmStatus.Text = "STOP!"
+	else
+		_G.AutoFarm = false
+		farmStatus.BackgroundColor3 = Color3.fromRGB(26,107,22)
+		farmStatus.Text = "START!"
+	end
+end)
