@@ -5,7 +5,7 @@ Gamer:Label("~ Press Right Shift To Hide GUI ~");
 Gamer:Button("Mhee Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BunnySalf/Hentai/main/MHEEHUB",true))()
 end)
-Gamer:Button("Spy Hub", function()
+Gamer:Button("Sky Hub", function()
 _G.MainI = Color3.fromRGB(203 ,156, 255)
 _G.MainII = Color3.fromRGB(140, 166 ,252)
 _G.ButtonI = Color3.fromRGB(203 ,156, 255)
