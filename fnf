@@ -1,0 +1,26 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/GAGA5H8t"))();
+
+local Gamer = library:CreateSection("Funky Friday");
+Gamer:Label("~ Press Right Shift To Hide GUI ~");
+Gamer:Button("Auto Player", function()
+shared.Settings = {
+   Autoplay = true, -- is the autoplayer is enabled
+   ReleaseDelay = 7, -- time to wait before releasing the note (in ms)
+   
+   Percentages = { -- accuracy percentages
+       ["Sick"] = 50,
+       ["Good"] = 35,
+       ["Ok"] = 15,
+       ["Bad"] = 0
+   }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/Releases/master/Funky%20Friday.lua"))()
+end)
+Gamer:Button("GUI (Only Inf Points Works!)", function()
+loadstring(game:HttpGet("http://cattori.xyz/main.lua"))(
+end)
+Gamer:Label("~ Thanks for using Furk Ultra ~");
+
+library:Ready();
+© 2021 GitHub, Inc.
