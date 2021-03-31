@@ -18,9 +18,8 @@ shared.Settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/Releases/master/Funky%20Friday.lua"))()
 end)
 Gamer:Button("GUI (Only Inf Points Works!)", function()
-loadstring(game:HttpGet("http://cattori.xyz/main.lua"))(
+loadstring(game:HttpGet(('http://cattori.xyz/main.lua')))()
 end)
 Gamer:Label("~ Thanks for using Furk Ultra ~");
 
 library:Ready();
-© 2021 GitHub, Inc.
