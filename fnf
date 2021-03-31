@@ -2050,9 +2050,6 @@ shared.Settings = {
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/Releases/master/Funky%20Friday.lua"))()
 		end)
-		Tab:AddButton("GUI (Only Inf Points & Esp Works!)", function()
-    loadstring(game:HttpGet(('http://cattori.xyz/main.lua')))()
-		end)
 		
 
 	end
