@@ -2041,6 +2041,9 @@ do -- Example UI
     Tab:AddButton("AutoFarming GUI", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/2KNr4Bin",true))()
 		end)
+	 Tab:AddButton("Item ESP", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hellyeah1/yba-item-esp/main/ybaitemesp.lua", true))()
+		end)
 
 		
 
