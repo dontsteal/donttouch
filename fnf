@@ -2034,16 +2034,48 @@ do -- Example UI
 	do -- Elements
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
+		
+		Tab:AddButton("Auto Play (OP)", function()
+shared.Settings = {
+   Autoplay = true, -- is the autoplayer is enabled
+   ReleaseDelay = 7, -- time to wait before releasing the note (in ms)
+   
+   Percentages = { -- accuracy percentages
+       ["Sick"] = 95,
+       ["Good"] = 0,
+       ["Ok"] = 0,
+       ["Bad"] = 0
+   }
+}
 
-		Tab:AddButton("Auto Play", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/Releases/master/Funky%20Friday.lua"))()
+		end)
+
+		Tab:AddButton("Auto Play (Legit)", function()
 shared.Settings = {
    Autoplay = true, -- is the autoplayer is enabled
    ReleaseDelay = 7, -- time to wait before releasing the note (in ms)
    
    Percentages = { -- accuracy percentages
        ["Sick"] = 50,
-       ["Good"] = 35,
-       ["Ok"] = 15,
+       ["Good"] = 50,
+       ["Ok"] = 0,
+       ["Bad"] = 0
+   }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/Releases/master/Funky%20Friday.lua"))()
+		end)
+		
+Tab:AddButton("Stop Auto Play", function()
+shared.Settings = {
+   Autoplay = False, -- is the autoplayer is enabled
+   ReleaseDelay = 7, -- time to wait before releasing the note (in ms)
+   
+   Percentages = { -- accuracy percentages
+       ["Sick"] = 0,
+       ["Good"] = 0,
+       ["Ok"] = 0,
        ["Bad"] = 0
    }
 }
