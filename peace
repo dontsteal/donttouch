@@ -5,10 +5,12 @@ Gamer:Label("~ Press Right Shift To Hide GUI ~");
 Gamer:Button("Mhee Hub", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/KyP4n2rT",true))()
 end)
-Gamer:Button("GUI 2", function()
-_G.RaidFarm = false -- put to "true" if u want to enable Raid Farm
-_G.RaidWeapon = "Xmas Blade" -- put ur weapon in if u enable Raid Farm
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
+Gamer:Button("Devil Fruit Farm", function()
+for i,v in pairs(game.Workspace:GetDescendants()) do
+   if v:IsA("Tool") and v.Parent == Workspace and v:FindFirstChild("Handle") and v:FindFirstChild("DevilFruit") then
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+   end
+end
 end)
 Gamer:Label("~ Thanks for using Furk Ultra ~");
 
