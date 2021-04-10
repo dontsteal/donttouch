@@ -2023,7 +2023,7 @@ function library:AddWindow(title, options)
 end
 
 do -- Example UI
-	local Window = library:AddWindow("Furk - Funky Friday", {
+	local Window = library:AddWindow("Furk - Super Evolution", {
 		main_color = Color3.fromRGB(0, 0, 0),
 		min_size = Vector2.new(400, 400),
 		toggle_key = Enum.KeyCode.RightShift,
