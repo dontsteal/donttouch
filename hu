@@ -2038,6 +2038,16 @@ do -- Example UI
 		Tab:AddButton("GUI 1", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/derekcool38/Releases/main/ScriptHub/Loader.lua"))()
 		end)
+		Tab:AddButton("Sky Hub", function()
+-- SETTING THEME --
+_G.MainI = Color3.fromRGB(203 ,156, 255)
+_G.MainII = Color3.fromRGB(140, 166 ,252)
+_G.ButtonI = Color3.fromRGB(203 ,156, 255)
+_G.ButtonII = Color3.fromRGB(140, 166 ,252)
+_G.BlackGround = Color3.fromRGB(140, 166 ,252)
+-- SCRIPT GAME --
+loadstring(game:HttpGet("http://skyhubking.xyz/script/free_script/main%20game.lua"))()
+		end)
 Tab:AddButton("Hide Identity", function()
     for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 if v.Name == "HealthGui" or v.Name == "FakeHead" or v.Name == "FakeHead2" or v:IsA("Shirt") or v:IsA("Pants") or v:IsA("Accessory") then
