@@ -2035,8 +2035,8 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 
-		Tab:AddButton("#1 GUI", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SirShine/Obfuscated-Roblox-Scripts/main/Your%20Bizarre%20Adventure/YBAGUI.lua", true))()
+		Tab:AddButton("Rem's Hub", function()
+		loadstring(game:HttpGet("https://remcc.xyz/amogus.lua"))();
 		end)
     Tab:AddButton("AutoFarming GUI", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/2KNr4Bin",true))()
