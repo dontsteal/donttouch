@@ -2041,7 +2041,7 @@ do -- Example UI
     Tab:AddButton("AutoFarming GUI", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/2KNr4Bin",true))()
 		end)
-	Tab:AddButton("AutoFarming GUI 2", function()
+	Tab:AddButton("AutoFarming GUI 2 (PATCHED)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BunnySalf/Hentai/main/MHEEHUB",true))()
 		end)
 	 Tab:AddButton("Item ESP", function()
