@@ -2023,7 +2023,7 @@ function library:AddWindow(title, options)
 end
 
 do -- Example UI
-	local Window = library:AddWindow("Furk - Combat Rift", {
+	local Window = library:AddWindow("Furk - Dragon Ball Rage", {
 		main_color = Color3.fromRGB(0, 0, 0),
 		min_size = Vector2.new(300, 250),
 		toggle_key = Enum.KeyCode.RightShift,
@@ -2035,11 +2035,400 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 
-		Tab:AddButton("GUI 1", function()
-    	loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/SpooderScripts/main/CombatRift/MainScript.lua"))()
+		Tab:AddButton("Cattori Hub", function()
+			loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
 		end)
-    Tab:AddButton("GUI 2", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/fciGpeVJ", true))()
+		Tab:AddButton("GUI 1", function()
+			loadstring(game:HttpGet(('https://pastebin.com/raw/FN5qVfJc'),true))()
+		end)
+		Tab:AddButton("GUI 2", function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/bibNXRV5", true))()
+		end)
+		Tab:AddButton("GUI 3", function()
+			game.StarterGui:SetCore("SendNotification", {
+Title = "Made by";
+Text = "Dustyn & Ralsei, Please Vouch!";
+Duration = 10;
+})
+local DBR = Instance.new("ScreenGui")
+local MainDesign = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local Ki = Instance.new("TextButton")
+local Defense = Instance.new("TextButton")
+local Agility = Instance.new("TextButton")
+local AutoSave = Instance.new("TextButton")
+local Charge = Instance.new("TextButton")
+local Combat = Instance.new("TextButton")
+local ora = Instance.new("TextLabel")
+local dustyn = Instance.new("TextLabel")
+local oracredit = Instance.new("TextLabel")
+local dustyncredit = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local FrameStatus = Instance.new("Frame")
+local DefenseStatus = Instance.new("TextLabel")
+local DefTog = Instance.new("TextLabel")
+local KiBlastStatus = Instance.new("TextLabel")
+local KiTog = Instance.new("TextLabel")
+local CombatStatus = Instance.new("TextLabel")
+local ComTog = Instance.new("TextLabel")
+local Delete = Instance.new("TextButton")
+local ToggleGUI = Instance.new("TextButton")
+local toggle = false
+--Properties:
+DBR.Name = "DBR"
+DBR.Parent = game.CoreGui
+
+MainDesign.Name = "MainDesign"
+MainDesign.Parent = DBR
+MainDesign.Active = true
+MainDesign.BackgroundColor3 = Color3.new(0, 0, 0)
+MainDesign.BorderColor3 = Color3.new(1, 1, 1)
+MainDesign.Draggable = true
+MainDesign.Position = UDim2.new(0.341370851, -18, 0.20978184, 22)
+MainDesign.Size = UDim2.new(0, 463, 0, 291)
+MainDesign.Style = Enum.FrameStyle.RobloxRound
+
+Frame.Parent = MainDesign
+Frame.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+Frame.BorderColor3 = Color3.new(1, 1, 1)
+Frame.Position = UDim2.new(0.0913098454, 0, 0.0950036272, 0)
+Frame.Size = UDim2.new(0, 352, 0, 221)
+Frame.Style = Enum.FrameStyle.DropShadow
+
+Ki.Name = "Ki"
+Ki.Parent = Frame
+Ki.Active = false
+Ki.BackgroundColor3 = Color3.new(1, 1, 1)
+Ki.BorderColor3 = Color3.new(1, 1, 1)
+Ki.Position = UDim2.new(0.503212869, 0, -0.000783997937, 0)
+Ki.Size = UDim2.new(0, 166, 0, 32)
+Ki.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+Ki.Font = Enum.Font.SciFi
+Ki.Text = "Ki Blast"
+Ki.TextColor3 = Color3.new(0, 0, 0)
+Ki.TextSize = 14
+Ki.MouseButton1Down:connect(function()
+if Ki.Text == "Ki Blast" then
+Ki.Text = "Stop Ki Blast"
+KiTog.Text = "Enabled"
+KiTog.TextColor3 = Color3.new(0, 255, 0)
+while Ki.Text == "Stop Ki Blast" do
+game.ReplicatedStorage.Remotes.Actions.EnergyBlast:InvokeServer("Left")
+game.ReplicatedStorage.Remotes.Actions.EnergyBlast:InvokeServer("Right")
+end
+else
+Ki.Text = "Ki Blast"
+KiTog.Text = "Disabled"
+KiTog.TextColor3 = Color3.new(0.666667, 0, 0)
+_G.B = false
+while _G.B do
+game.ReplicatedStorage.Remotes.Actions.EnergyBlast:InvokeServer("Left")
+game.ReplicatedStorage.Remotes.Actions.EnergyBlast:InvokeServer("Right")
+end
+end
+end)
+
+Defense.Name = "Defense"
+Defense.Parent = Frame
+Defense.Active = false
+Defense.BackgroundColor3 = Color3.new(1, 1, 1)
+Defense.BorderColor3 = Color3.new(1, 1, 1)
+Defense.Position = UDim2.new(-0.0015179133, 0, 0.153964013, 0)
+Defense.Size = UDim2.new(0, 166, 0, 32)
+Defense.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+Defense.Font = Enum.Font.SciFi
+Defense.Text = "Defense"
+Defense.TextColor3 = Color3.new(0, 0, 0)
+Defense.TextSize = 14
+Defense.MouseButton1Click:connect(function()
+if Defense.Text == "Defense" then
+DefTog.Text = "Enabled"
+DefTog.TextColor3 = Color3.new(0, 255, 0)
+Defense.Text = "Stop Defense" do
+while Defense.Text == "Stop Defense" do
+game.ReplicatedStorage.Remotes.Training.Defense:InvokeServer("game.Players.LocalPlayer.Stats, game.Players.LocalPlayer.Status, game.Workspace[game.Players.LocalPlayer.Name].Humanoid, game.Workspace[game.Players.LocalPlayer.Name].RightHand")
+end
+end
+else
+Defense.Text = "Defense"
+DefTog.Text = "Disabled"
+DefTog.TextColor3 = Color3.new(0.666667, 0, 0)
+end
+end)
+
+Agility.Name = "Agility"
+Agility.Parent = Frame
+Agility.Active = false
+Agility.BackgroundColor3 = Color3.new(1, 1, 1)
+Agility.BorderColor3 = Color3.new(1, 1, 1)
+Agility.Position = UDim2.new(0.504973829, 0, 0.155052483, 0)
+Agility.Size = UDim2.new(0, 166, 0, 32)
+Agility.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+Agility.Font = Enum.Font.SciFi
+Agility.Text = "Agility"
+Agility.TextColor3 = Color3.new(0, 0, 0)
+Agility.TextSize = 14
+Agility.MouseButton1Down:connect(function()
+game.ReplicatedStorage.Remotes.Training.FlightData:FireServer(true)
+end)
+
+AutoSave.Name = "AutoSave"
+AutoSave.Parent = Frame
+AutoSave.Active = false
+AutoSave.BackgroundColor3 = Color3.new(1, 1, 1)
+AutoSave.BorderColor3 = Color3.new(1, 1, 1)
+AutoSave.Position = UDim2.new(0.504292727, 0, 0.307172656, 0)
+AutoSave.Size = UDim2.new(0, 166, 0, 32)
+AutoSave.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+AutoSave.Font = Enum.Font.SciFi
+AutoSave.Text = "Auto-Save"
+AutoSave.TextColor3 = Color3.new(0, 0, 0)
+AutoSave.TextSize = 14
+AutoSave.MouseButton1Down:connect(function()
+game.StarterGui:SetCore("SendNotification", {
+Title = "AutoSave Acitve";
+Text = "Please only click once.";
+Duration = 5;
+})
+_G.Save = true
+while _G.Save do
+wait (30)
+game.ReplicatedsStorage.Save:InvokeServer()
+end
+end)
+
+Charge.Name = "Charge"
+Charge.Parent = Frame
+Charge.Active = false
+Charge.BackgroundColor3 = Color3.new(1, 1, 1)
+Charge.BorderColor3 = Color3.new(1, 1, 1)
+Charge.Position = UDim2.new(-0.0015179161, 0, 0.307172656, 0)
+Charge.Size = UDim2.new(0, 166, 0, 32)
+Charge.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+Charge.Font = Enum.Font.SciFi
+Charge.Text = "Charge"
+Charge.TextColor3 = Color3.new(0, 0, 0)
+Charge.TextSize = 14
+Charge.MouseButton1Down:connect(function()
+game.ReplicatedStorage.Remotes.Training.Charge:InvokeServer(game.Players.LocalPlayer.Status, game.Workspace[game.Players.LocalPlayer.Name].UpperTorso, game.Workspace[game.Players.LocalPlayer.Name].Humanoid)
+end)
+
+Combat.Name = "Combat"
+Combat.Parent = Frame
+Combat.Active = false
+Combat.BackgroundColor3 = Color3.new(1, 1, 1)
+Combat.BorderColor3 = Color3.new(1, 1, 1)
+Combat.Position = UDim2.new(0.000371932983, 0, -0.000783997937, 0)
+Combat.Size = UDim2.new(0, 166, 0, 32)
+Combat.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+Combat.Font = Enum.Font.SciFi
+Combat.Text = "Combat"
+Combat.TextColor3 = Color3.new(0, 0, 0)
+Combat.TextSize = 14
+Combat.MouseButton1Down:connect(function()
+if Combat.Text == "Combat" then
+Combat.Text = "Stop Combat"
+ComTog.Text = "Enabled"
+ComTog.TextColor3 = Color3.new(0, 255, 0)
+while Combat.Text == "Stop Combat" do
+wait()
+local f =
+{
+["LeftLowerArm"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].LeftLowerArm,
+["RightUpperArm"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].RightUpperArm,
+["LeftFoot"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].LeftFoot,
+["RightHand"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].RightHand,
+["RightLowerArm"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].RightLowerArm,
+["LeftUpperLeg"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].LeftUpperLeg,
+["LeftUpperArm"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].LeftUpperArm,
+["Character"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name],
+["LeftHand"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].LeftHand,
+["RightFoot"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].RightFoot,
+["Humanoid"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].Humanoid,
+["RightLowerLeg"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].RightLowerLeg,
+["RightUpperLeg"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].RightUpperLeg,
+["LeftLowerLeg"] = game:GetService("Workspace")[game.Players.LocalPlayer.Name].LeftLowerLeg
+}
+local path = game:GetService("ReplicatedStorage").Remotes.Training.Combat
+path:InvokeServer(f)
+end
+else
+Combat.Text = "Combat"
+ComTog.Text = "Disabled"
+ComTog.TextColor3 = Color3.new(0.666667, 0, 0)
+end
+end)
+
+ora.Name = "ora"
+ora.Parent = MainDesign
+ora.BackgroundColor3 = Color3.new(1, 1, 1)
+ora.BackgroundTransparency = 1
+ora.BorderColor3 = Color3.new(0, 0, 0)
+ora.Position = UDim2.new(0.679339409, 0, 0.0481509455, 0)
+ora.Size = UDim2.new(0, 139, 0, 21)
+ora.Font = Enum.Font.SciFi
+ora.Text = "3ora#2037"
+ora.TextColor3 = Color3.new(1, 1, 1)
+ora.TextSize = 14
+
+dustyn.Name = "dustyn"
+dustyn.Parent = MainDesign
+dustyn.BackgroundColor3 = Color3.new(1, 1, 1)
+dustyn.BackgroundTransparency = 1
+dustyn.Position = UDim2.new(-0.000373635441, 0, 0.0394395292, 0)
+dustyn.Size = UDim2.new(0, 171, 0, 25)
+dustyn.Font = Enum.Font.SciFi
+dustyn.Text = "Dustyn#2215"
+dustyn.TextColor3 = Color3.new(1, 1, 1)
+dustyn.TextSize = 14
+
+oracredit.Name = "oracredit"
+oracredit.Parent = MainDesign
+oracredit.BackgroundColor3 = Color3.new(1, 1, 1)
+oracredit.BackgroundTransparency = 1
+oracredit.Position = UDim2.new(0.630147099, 0, 0.0200889017, 0)
+oracredit.Size = UDim2.new(0, 173, 0, 8)
+oracredit.Font = Enum.Font.ArialBold
+oracredit.Text = "GUI Functionality"
+oracredit.TextColor3 = Color3.new(1, 1, 1)
+oracredit.TextSize = 14
+
+dustyncredit.Name = "dustyncredit"
+dustyncredit.Parent = MainDesign
+dustyncredit.BackgroundColor3 = Color3.new(1, 1, 1)
+dustyncredit.BackgroundTransparency = 1
+dustyncredit.Position = UDim2.new(0.0016373992, 0, 0.0200889017, 0)
+dustyncredit.Size = UDim2.new(0, 173, 0, 8)
+dustyncredit.Font = Enum.Font.ArialBold
+dustyncredit.Text = "Features/Designing"
+dustyncredit.TextColor3 = Color3.new(1, 1, 1)
+dustyncredit.TextSize = 14
+
+Title.Name = "Title"
+Title.Parent = MainDesign
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.261245757, 0, -0.00536128832, 0)
+Title.Size = UDim2.new(0, 200, 0, 35)
+Title.Font = Enum.Font.SciFi
+Title.Text = "DBR"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextSize = 50
+
+FrameStatus.Name = "FrameStatus"
+FrameStatus.Parent = MainDesign
+FrameStatus.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+FrameStatus.BorderColor3 = Color3.new(1, 1, 1)
+FrameStatus.Position = UDim2.new(0.303098202, 0, 0.66837877, 0)
+FrameStatus.Size = UDim2.new(0, 176, 0, 100)
+FrameStatus.Style = Enum.FrameStyle.DropShadow
+
+DefenseStatus.Name = "DefenseStatus"
+DefenseStatus.Parent = FrameStatus
+DefenseStatus.BackgroundColor3 = Color3.new(1, 1, 1)
+DefenseStatus.BackgroundTransparency = 1
+DefenseStatus.BorderColor3 = Color3.new(0, 0, 0)
+DefenseStatus.Position = UDim2.new(-0.113784656, 0, 0.571392238, 0)
+DefenseStatus.Size = UDim2.new(0, 139, 0, 21)
+DefenseStatus.Font = Enum.Font.SciFi
+DefenseStatus.Text = "Defense Status:"
+DefenseStatus.TextColor3 = Color3.new(1, 1, 1)
+DefenseStatus.TextSize = 14
+
+DefTog.Name = "DefTog"
+DefTog.Parent = DefenseStatus
+DefTog.Active = true
+DefTog.BackgroundColor3 = Color3.new(1, 1, 1)
+DefTog.BackgroundTransparency = 1
+DefTog.Position = UDim2.new(0.63973105, 0, 0.122731507, 0)
+DefTog.Size = UDim2.new(0, 112, 0, 18)
+DefTog.Font = Enum.Font.SciFi
+DefTog.Text = "Disabled"
+DefTog.TextColor3 = Color3.new(0.666667, 0, 0)
+DefTog.TextSize = 14
+
+KiBlastStatus.Name = "KiBlastStatus"
+KiBlastStatus.Parent = FrameStatus
+KiBlastStatus.BackgroundColor3 = Color3.new(1, 1, 1)
+KiBlastStatus.BackgroundTransparency = 1
+KiBlastStatus.Position = UDim2.new(-0.217377409, 0, 0.0881346837, 0)
+KiBlastStatus.Size = UDim2.new(0, 166, 0, 22)
+KiBlastStatus.Font = Enum.Font.SciFi
+KiBlastStatus.Text = "Ki Blast Status:"
+KiBlastStatus.TextColor3 = Color3.new(1, 1, 1)
+KiBlastStatus.TextSize = 14
+
+KiTog.Name = "KiTog"
+KiTog.Parent = KiBlastStatus
+KiTog.BackgroundColor3 = Color3.new(1, 1, 1)
+KiTog.BackgroundTransparency = 1
+KiTog.Position = UDim2.new(0.634478867, 0, 0.144611716, 0)
+KiTog.Size = UDim2.new(0, 102, 0, 19)
+KiTog.Font = Enum.Font.SciFi
+KiTog.Text = "Disabled"
+KiTog.TextColor3 = Color3.new(0.666667, 0, 0)
+KiTog.TextSize = 14
+
+CombatStatus.Name = "CombatStatus"
+CombatStatus.Parent = FrameStatus
+CombatStatus.BackgroundColor3 = Color3.new(1, 1, 1)
+CombatStatus.BackgroundTransparency = 1
+CombatStatus.Position = UDim2.new(-0.0502409115, 0, 0.356267601, 0)
+CombatStatus.Size = UDim2.new(0, 113, 0, 18)
+CombatStatus.Font = Enum.Font.SciFi
+CombatStatus.Text = "Combat Status:"
+CombatStatus.TextColor3 = Color3.new(1, 1, 1)
+CombatStatus.TextSize = 14
+
+ComTog.Name = "ComTog"
+ComTog.Parent = CombatStatus
+ComTog.BackgroundColor3 = Color3.new(1, 1, 1)
+ComTog.BackgroundTransparency = 1
+ComTog.Position = UDim2.new(0.76729238, 0, -0.043589592, 0)
+ComTog.Size = UDim2.new(0, 89, 0, 18)
+ComTog.Font = Enum.Font.SciFi
+ComTog.Text = "Disabled"
+ComTog.TextColor3 = Color3.new(0.666667, 0, 0)
+ComTog.TextSize = 14
+
+Delete.Name = "Delete"
+Delete.Parent = MainDesign
+Delete.Active = false
+Delete.BackgroundColor3 = Color3.new(1, 1, 1)
+Delete.BackgroundTransparency = 1.0299999713898
+Delete.Position = UDim2.new(0.946227968, 0, 0.924391568, 0)
+Delete.Size = UDim2.new(0, 19, 0, 17)
+Delete.Font = Enum.Font.SciFi
+Delete.Text = "X"
+Delete.TextColor3 = Color3.new(1, 1, 1)
+Delete.TextSize = 14
+Delete.TextWrapped = true
+Delete.MouseButton1Down:connect(function()
+wait(0.3)
+DBR:Destroy()
+end)
+
+ToggleGUI.Name = "ToggleGUI"
+ToggleGUI.Parent = DBR
+ToggleGUI.BackgroundColor3 = Color3.new(0, 0, 0)
+ToggleGUI.BorderColor3 = Color3.new(1, 1, 1)
+ToggleGUI.Draggable = true
+ToggleGUI.Position = UDim2.new(0.890999973, 0, 0.47299999, 0)
+ToggleGUI.Size = UDim2.new(0, 122, 0, 20)
+ToggleGUI.Font = Enum.Font.SciFi
+ToggleGUI.Text = "Toggle GUI"
+ToggleGUI.TextColor3 = Color3.new(1, 1, 1)
+ToggleGUI.TextSize = 14
+ToggleGUI.TextStrokeColor3 = Color3.new(1, 1, 1)
+ToggleGUI.MouseButton1Down:connect(function()
+if toggle == false then
+MainDesign:TweenPosition(UDim2.new(0.341, -18,0.21, 22), 'Out', 'Bounce' ,1)
+toggle = true
+else
+MainDesign:TweenPosition(UDim2.new(0.343, -15,1.234, 415), 'Out', 'Bounce' ,1)
+toggle = false
+end
+end)
 		end)
 		
 
