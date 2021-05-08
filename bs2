@@ -2035,7 +2035,7 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 
-Tab:AddButton("Awesome GUI", function()
+Tab:AddButton("#1 GUI", function()
 			(loadstring)(game:HttpGetAsync('https://raw.githubusercontent.com/InveII/Wulphset/main/Blood_Samurai_2.lua'))()
 		end)
 		Tab:AddButton("GUI", function()
