@@ -6,7 +6,7 @@ Gamer:Button("Mhee Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BunnySalf/Hentai/main/MHEEHUB",true))()
 end)
 Gamer:Button("Evil Hub", function()
-https://raw.githubusercontent.com/Natthawat69/EvilHub-FREE/main/Script.lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Natthawat69/EvilHub-FREE/main/Script.lua"))()
 end)
 Gamer:Button("Sky Hub", function()
 _G.MainI = Color3.fromRGB(203 ,156, 255)
