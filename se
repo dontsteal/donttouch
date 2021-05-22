@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Super Evolution", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(400, 400),
+		min_size = Vector2.new(400, 500),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
@@ -2035,7 +2035,34 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 		
-Tab:AddLabel("Equip before Executing")
+Tab:AddButton("GUI", function()
+			loadstring(game:HttpGet("https://system-exodus.com/scripts/misc-releases/superevolution.lua",true))()
+		end)
+		Tab:AddButton("Unlock All Badges", function()
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/TonyX03/b576e8c3db43069e00a0e0c85eb2cbda/raw/07d343d5fac9748637d4630348e2d569837b0d67/gistfile1.txt",true))()
+		end)
+		Tab:AddButton("Collect Chests - Coin Farm", function()
+			local player = game.Players.LocalPlayer
+
+for i , v in pairs (game:GetService("Workspace").DropSpawns.Earth:GetChildren()) do
+   for i , v in pairs (v:GetChildren()) do
+       if v:IsA("UnionOperation") then
+           player.Character.HumanoidRootPart.CFrame = v.CFrame
+           wait(0.11)
+               else if v:IsA("MeshPart") then
+               player.Character.HumanoidRootPart.CFrame = v.CFrame
+               wait(0.11)
+                   else if v:IsA("Part") then
+                   player.Character.HumanoidRootPart.CFrame = v.CFrame
+                   wait(0.11)
+               end
+           end
+       end
+   end
+end
+		end)
+		
+		Tab:AddLabel("Equip before Executing")
 
 		Tab:AddButton("Kill Farm, Basic Fists", function()
 			--equip fist to use
@@ -2424,7 +2451,7 @@ while true do
     wait()
 end
 		end)
-		Tab:AddLabel("Get the quest, then execute the level of the quest")		
+		Tab:AddLabel("Get the quest, then execute the level of the quest")	
 
 	end
 
