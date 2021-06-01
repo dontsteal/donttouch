@@ -2040,12 +2040,8 @@ do -- Example UI
       		Tab:AddButton("Rem's Hub", function()
       loadstring(game:HttpGet("https://remcc.xyz/amogus.lua"))();
 		end)
-
-		Tab:AddButton("Mhee Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BunnySalf/Hentai/main/MHEEHUB",true))()
-		end)
       
-      		Tab:AddButton("GUI 3", function()
+      		Tab:AddButton("OP GUI", function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
 		end)
       
