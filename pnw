@@ -2034,14 +2034,14 @@ do -- Example UI
 	do -- Elements
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
-
-		idkdddd:AddButton("#1 GUI", function()
+		
+		Tab:AddButton("#1 GUI", function()
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/extreime/Roblox-scripts/main/Project%20New%20World'))()
 		end)
-		idkdddd:AddButton("Kronos GUI", function()
+	    	Tab:AddButton("Kronos GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/LeadMarker/main/KronosHub"))()
 		end)
-		idkdddd:AddButton("CosmicHub GUI", function()
+    		Tab:AddButton("CosmicHub GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/CosmicHub/HAHAEIEIUU/main/PNW2.lua"))()
 		end)
 		
