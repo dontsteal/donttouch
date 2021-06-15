@@ -2041,8 +2041,8 @@ do -- Example UI
 		Tab:AddButton("New OP GUI", function()
 			loadstring(game:HttpGet('https://gist.githubusercontent.com/stellar-4242/090eac215b54e6520097aea444b9f530/raw/48e54416196937bae43e16036e1b59882d6f736c/autofarm.lua'))()
 		end)
-		Tab:AddButton("New GUI", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))()
+		Tab:AddButton("Historia Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/Histyhubb"))()
 		end)
 
 		
