@@ -1,0 +1,22 @@
+_G.upgrade = false
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/eKwyeQa0", true))()
+
+local tab1 = library:CreateTab("Tower Heroes", true)
+
+local toggle1 = library:MakeToggle(tab1,"Upgrade All",false,function(toggle)
+
+if _G.upgrade == true then
+   _G.upgrade = false
+elseif _G.upgrade == false then
+   _G.upgrade = true
+end
+while _G.upgrade do
+wait(0.1)
+   local children = game:GetService("Workspace").Troop:GetChildren()
+   for i = 1, #children do
+       if children[i].Stats.Owner.Value == game:GetService("Players").LocalPlayer.Name then
+           game:GetService("ReplicatedStorage").Events.TroopEvent:FireServer("Upgrade", children[i])
+       end
+   end
+end
+end)
