@@ -2036,7 +2036,10 @@ do -- Example UI
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 
 		Tab:AddButton("#1 GUI", function()
-			loadstring(game:HttpGet("https://gist.githubusercontent.com/DeveloperMikey/2b8ee3d5a38c56c2cc1db72554850384/raw/bedwar.lua", true))()
+		loadstring(game:HttpGet("https://gist.githubusercontent.com/DeveloperMikey/2b8ee3d5a38c56c2cc1db72554850384/raw/bedwar.lua", true))()
+		end)
+		Tab:AddButton("Monkey GUI", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))()
 		end)
 		Tab:AddButton("ESP Everything", function()
 			loadstring(game:HttpGet(('https://hastebin.com/raw/utozojedoy.md'),true))()
