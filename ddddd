@@ -1,0 +1,28 @@
+-- Example made by twink marie
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local X = Material.Load({
+   Title = "Demonfall - Tp to NPCs",
+   Style = 2,
+   SizeX = 500,
+   SizeY = 350,
+   Theme = "Light",
+   ColorOverrides = {
+       MainFrame = Color3.fromRGB(235,235,235)
+   }
+})
+
+local Main = X.New({
+   Title = "Main"
+})
+
+for i,v in ipairs(game:GetService("Workspace").Npcs:GetChildren()) do
+   if v:FindFirstChild("HumanoidRootPart") then
+   Main.Button({
+       Text = "Teleport to " .. v.Name,
+       Callback = function()
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v:FindFirstChild("HumanoidRootPart").CFrame
+       end
+   })
+   end
+end
