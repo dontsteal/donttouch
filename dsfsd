@@ -1,0 +1,21 @@
+local function yes()
+  for i,v in pairs(game.workspace.Map.Minerals:GetChildren()) do
+  for ii,vv in pairs(v:GetChildren()) do
+       for iii,vvv in pairs(vv:GetChildren()) do
+           if vvv.Name == "MineralName" then
+               if vvv.Value == "Sun Ore" then --- change "Sun Ore" to other ore names if you want
+                   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = vvv.Parent.CFrame
+               end
+           end
+       end
+   end
+end
+end
+
+
+
+game.Players.LocalPlayer.Chatted:Connect(function(w)
+   if w == "ah" then ----- change "ah" to whatever you want to type
+       yes()    
+   end
+end)
