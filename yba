@@ -2035,15 +2035,13 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 
-		Tab:AddButton("Rem's Hub", function()
-		loadstring(game:HttpGet("https://remcc.xyz/amogus.lua"))();
+		Tab:AddButton("#1 GUI", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))()
 		end)
-		Tab:AddButton("New OP GUI", function()
-			loadstring(game:HttpGet('https://gist.githubusercontent.com/stellar-4242/090eac215b54e6520097aea444b9f530/raw/48e54416196937bae43e16036e1b59882d6f736c/autofarm.lua'))()
+		Tab:AddButton("Utility GUI", function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/SomeRandomGithub-User/My-Scripts/main/YBA%20Utillity%20GUI.lua'),true))()
 		end)
-		Tab:AddButton("Historia Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/Histyhubb"))()
-		end)
+
 
 		
 
