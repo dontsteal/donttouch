@@ -2044,7 +2044,10 @@ do -- Example UI
 		Tab:AddButton("GUI 3", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dor-X-Hub/Loader/main/Main'))()
 		end)
-    		Tab:AddButton("Unlock GamePasses ", function()
+		Tab:AddButton("Pet Counter GUI", function()	
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Barko9/psx-script/main/pet-counter'))()
+		end)
+    		Tab:AddButton("Unlock GamePasses", function()
 		local gmppath = require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Gamepasses"])
 		gmppath.Owns = function() return true end
 		end)
