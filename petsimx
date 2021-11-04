@@ -2036,7 +2036,7 @@ do -- Example UI
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 
 		Tab:AddButton("KJ Hub - #1 GUI", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dor-X-Hub/Loader/main/Main'))()
+		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
 		end)
 		Tab:AddButton("Proxo GUI - OP", function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/95HthyJq"))()
