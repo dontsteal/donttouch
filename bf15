@@ -2035,6 +2035,9 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 
+		Tab:AddButton("3rd Sea GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))()
+		end)
 		Tab:AddButton("Strike Hub (#1)", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
 		end)
