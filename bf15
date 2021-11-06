@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Blox Fruits", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(300, 290),
+		min_size = Vector2.new(300, 310),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
