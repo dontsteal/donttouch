@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Pet Simulator X", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(300, 270),
+		min_size = Vector2.new(300, 320),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
@@ -2038,21 +2038,27 @@ do -- Example UI
 		Tab:AddButton("Proxo GUI - #1", function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/95HthyJq"))()
 		end)
+		Tab:AddButton("Dex Hub - OP", function()
+		loadstring(game:HttpGet("https://dexhub.xyz/loader.lua"))()
+		end)
+		Tab:AddButton("EzPets V2 - OP - Requires Key!", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))()
+		end)
 		Tab:AddButton("Mana Hub - OP", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Manahub-Script-Hyper-804-was-here.lua/main/Hyper-is-still-here.lua"))()
 		end)
-		Tab:AddButton("KJ Hub", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dor-X-Hub/Loader/main/Main'))()
+		Tab:AddButton("VG Hub", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 		end)
-		Tab:AddButton("GUI 3", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dor-X-Hub/Loader/main/Main'))()
+		Tab:AddButton("Ghost Hub", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
 		end)
-    		Tab:AddButton("Unlock GamePasses ", function()
-		local gmppath = require(game:GetService("ReplicatedStorage").Framework.Modules.Client["5 | Gamepasses"])
-		gmppath.Owns = function() return true end
+		Tab:AddButton("JXNT Hub", function()
+		loadstring(game:HttpGet("https://system-exodus.com/scripts/PetSimulator/PetSimulatorX.lua", true))()
 		end)
-
-		
+		Tab:AddButton("Ow Menu", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/inceldom/scrip/main/load",true))()
+		end)
 
 	end
 
