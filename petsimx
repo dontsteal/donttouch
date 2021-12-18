@@ -2055,9 +2055,6 @@ do -- Example UI
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 	
 	
-				Tab:AddButton("NEW Impact GUI - #1", function()
-		loadstring(game:HttpGet("https://schervi.wtf/ImpactXBeta.lua"))()
-		end)
 		Tab:AddButton("NEW PETSI X GUI - #1", function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/dqfmXAAn"))()
 		end)
