@@ -2029,24 +2029,12 @@ do -- Example UI
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
-	local Tab = Window:AddTab("Main")
+	local Tab = Window:AddTab("Side GUIs")
 
 	do -- Elements
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
-
-		Tab:AddButton("Proxo GUI - #1", function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/95HthyJq"))()
-		end)
-		Tab:AddButton("Dex Hub - OP", function()
-		loadstring(game:HttpGet("https://dexhub.xyz/loader.lua"))()
-		end)
-		Tab:AddButton("EzPets V2 - OP - Requires Key!", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))()
-		end)
-		Tab:AddButton("Mana Hub - OP", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Manahub-Script-Hyper-804-was-here.lua/main/Hyper-is-still-here.lua"))()
-		end)
+	
 		Tab:AddButton("VG Hub", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 		end)
@@ -2059,9 +2047,39 @@ do -- Example UI
 		Tab:AddButton("Ow Menu", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/inceldom/scrip/main/load",true))()
 		end)
+		
+		local Tab = Window:AddTab("Main GUIs")
+
+	do -- Elements
+		Tab:AddLabel("Thanks For Using Furk Ultra!")
+		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
+	
+	
+				Tab:AddButton("NEW Impact GUI - #1", function()
+		loadstring(game:HttpGet("https://schervi.wtf/ImpactXBeta.lua"))()
+		end)
+		Tab:AddButton("NEW PETSI X GUI - #1", function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/dqfmXAAn"))()
+		end)
+		Tab:AddButton("Handy Bank GUI", function()
+		loadstring(game:HttpGet("https://shub.fun/script/Pet-Simulator-X-Withdraw-Or-Deposit-simpleHub=XowQn23rBzbV.lua"))()
+		end)
+		Tab:AddButton("Proxo GUI - OP", function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/95HthyJq"))()
+		end)
+		Tab:AddButton("Dex Hub - OP", function()
+		loadstring(game:HttpGet("https://dexhub.xyz/loader.lua"))()
+		end)
+		Tab:AddButton("EzPets V2 - OP - Requires Key!", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))()
+		end)
+		Tab:AddButton("Mana Hub - OP", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Manahub-Script-Hyper-804-was-here.lua/main/Hyper-is-still-here.lua"))()
+		end)
 
 	end
 
 	Tab:Show()
 	library:FormatWindows()
+end
 end
