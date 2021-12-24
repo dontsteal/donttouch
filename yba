@@ -2034,16 +2034,23 @@ do -- Example UI
 	do -- Elements
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
-
+		
 		Tab:AddButton("#1 GUI", function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/XUSatpwK"))()
+		end)
+		Tab:AddButton("Kolgie YBA GUI - OP", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))()
+		end)
+		Tab:AddButton("Nex Hub - OP - REQUIRES KEY", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CopyReal/NexHub/main/NexHubLoader"))()
+		end)
+		Tab:AddButton("Invisible Item Farm", function()
+		getgenv().Toggle = true
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lmmake/Carely-Hub/main/Yba%20Script%20KRNL"))()
 		end)
 		Tab:AddButton("Utility GUI", function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/SomeRandomGithub-User/My-Scripts/main/YBA%20Utillity%20GUI.lua'),true))()
 		end)
-
-
-		
 
 	end
 
