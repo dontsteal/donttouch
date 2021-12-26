@@ -2025,20 +2025,20 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Shindo Life", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(410, 340),
+		min_size = Vector2.new(380, 300),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
 	local Tab = Window:AddTab("Main")
-	local TabP = Window:AddTab("Pumpkin Farm")
+	local TabP = Window:AddTab("Gift Farm")
 	do -- Elements
 		Tab:AddLabel("Thanks For Using Furk Ultra")
 		TabP:AddLabel("Thanks For Using Furk Ultra")
 				TabP:AddLabel("Only Works on Ember Village")
-		Tab:AddButton("NEW - VG Hub", function()
+		Tab:AddButton("NEW - Snxw Hub", function()
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 		end)
-		TabP:AddButton("NEW - Pumpkin Farm", function()
+		TabP:AddButton("NEW - Gift Farm", function()
 			getgenv().PumpkinFarm = true
 getgenv().ServerHop = false
 getgenv().PrivateServers = false
@@ -2046,7 +2046,7 @@ getgenv().HasGamepass = false -- (if you have private servers gamepass set it to
 getgenv().Village = "Ember" -- (which village you want the server to be you must have the gamepass) Villages: "Haze","Dunes","Storm","Nimbus","Obelisk","Ember","Ember 250 YC","Tempest"
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/ShindoPumpkinFarm'),true))()
 		end)
-		TabP:AddButton("NEW - Pumpkin Farm (SV Hop)", function()
+		TabP:AddButton("NEW - Gift Farm (SV Hop)", function()
 			getgenv().PumpkinFarm = true
 getgenv().ServerHop = true
 getgenv().PrivateServers = false
@@ -2054,7 +2054,7 @@ getgenv().HasGamepass = false -- (if you have private servers gamepass set it to
 getgenv().Village = "Ember" -- (which village you want the server to be you must have the gamepass) Villages: "Haze","Dunes","Storm","Nimbus","Obelisk","Ember","Ember 250 YC","Tempest"
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/ShindoPumpkinFarm'),true))()
 		end)
-		TabP:AddButton("NEW - Pumpkin Farm (SV Hop, Private SV)", function()
+		TabP:AddButton("NEW - Gift Farm (SV Hop, Private SV)", function()
 			getgenv().PumpkinFarm = true
 getgenv().ServerHop = true
 getgenv().PrivateServers = true
@@ -2062,7 +2062,7 @@ getgenv().HasGamepass = false -- (if you have private servers gamepass set it to
 getgenv().Village = "Ember" -- (which village you want the server to be you must have the gamepass) Villages: "Haze","Dunes","Storm","Nimbus","Obelisk","Ember","Ember 250 YC","Tempest"
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/ShindoPumpkinFarm'),true))()
 		end)
-		TabP:AddButton("NEW - Pumpkin Farm (SV Hop, Private SV, Gamepasses)", function()
+		TabP:AddButton("NEW - Gift Farm (SV Hop, Private SV, Gamepasses)", function()
 			getgenv().PumpkinFarm = true
 getgenv().ServerHop = true
 getgenv().PrivateServers = true
@@ -2070,18 +2070,14 @@ getgenv().HasGamepass = true -- (if you have private servers gamepass set it to 
 getgenv().Village = "Ember" -- (which village you want the server to be you must have the gamepass) Villages: "Haze","Dunes","Storm","Nimbus","Obelisk","Ember","Ember 250 YC","Tempest"
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/ShindoPumpkinFarm'),true))()
 		end)
-		Tab:AddButton("Solaris Hub", function()
-			loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+		Tab:AddButton("NEW - Mana Hub (Requires Key)", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Shindo%20v3"))()
 		end)
 		Tab:AddButton("Genkai/Element Changer", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/xzqecc/Script/main/xzqec_changer"))()
 		end)
-		Tab:AddLabel("Note that the Genkai/Element Cahnger ONLY works")
+		Tab:AddLabel("Note that the Genkai/Element Changer ONLY works")
 		Tab:AddLabel("with previous Genkais/Elements you owned!")
-
-		Tab:AddButton("Assasine Auto Farm GUI", function()
-			loadstring(game:HttpGet("http://assasine.com/Scripts/Shinobi_Life_2_Autofarm.lua", true))()
-		end)
 
 		Tab:AddButton("SpyHub GUI", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/6Wumpus6/SpyHub/main/ShindoLife", true))()
