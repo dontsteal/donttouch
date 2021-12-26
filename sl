@@ -2036,7 +2036,7 @@ do -- Example UI
 		TabP:AddLabel("Thanks For Using Furk Ultra")
 				TabP:AddLabel("Only Works on Ember Village")
 		Tab:AddButton("NEW - Snxw Hub", function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Web/main/scripts/SnxwHub.txt"))()
 		end)
 		TabP:AddButton("NEW - Gift Farm", function()
 			getgenv().PumpkinFarm = true
@@ -2071,7 +2071,7 @@ getgenv().Village = "Ember" -- (which village you want the server to be you must
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/ShindoPumpkinFarm'),true))()
 		end)
 		Tab:AddButton("NEW - Mana Hub (Requires Key)", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Shindo%20v3"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Manahub-Script-Hyper-804-was-here.lua/main/Hyper-is-still-here.lua"))()
 		end)
 		Tab:AddButton("Genkai/Element Changer", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/xzqecc/Script/main/xzqec_changer"))()
