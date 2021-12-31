@@ -2025,25 +2025,16 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Blox Fruits", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(300, 310),
+		min_size = Vector2.new(300, 250),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
-	local Tab = Window:AddTab("Main")
+	local Tab = Window:AddTab("Side GUIs")
 
 	do -- Elements
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
 
-		Tab:AddButton("3rd Sea GUI", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))()
-		end)
-		Tab:AddButton("Strike Hub (#1)", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
-		end)
-		Tab:AddButton("Dino Hub (OP)", function()
-			loadstring(game:HttpGet("https://pastebin.com/raw/1EQmGiQr", true))()
-		end)
 		Tab:AddButton("Evil Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Natthawat69/EvilHub-FREE/main/Script.lua"))()
 
@@ -2061,10 +2052,36 @@ do -- Example UI
 		Tab:AddButton("VG Hub", function()
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 		end)
-    
 		
 
 	end
+
+local Tab = Window:AddTab("Main GUIs")
+
+	do -- Elements
+		Tab:AddLabel("Thanks For Using Furk Ultra!")
+		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
+		
+
+		Tab:AddButton("NEW - Mukuro GUI OP", function()
+			loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+		end)
+		Tab:AddButton("NEW - Hulk Hub", function()
+			loadstring(game:HttpGet"https://raw.githubusercontent.com/HULKUexe/Free---Script/main/3GAME")()
+		end)
+		Tab:AddButton("NEW -  Maru Hub", function()
+			local HwidList = {
+  			"Ez-Cracked",
+			}
+			loadstring(game:HttpGet"https://raw.githubusercontent.com/naypramx/Crack/Script/MaruCracked")()
+		end)
+		Tab:AddButton("Nights GUI", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))()
+		end)
+		Tab:AddButton("Strike Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
+		end)
+end
 
 	Tab:Show()
 	library:FormatWindows()
