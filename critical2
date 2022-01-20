@@ -60,7 +60,8 @@ local A = Y.Button({
 local A = Y.Button({
 	Text = "Cheeto Hub",
 	Callback = function()
-		loadstring(game:HttpGet"https://pastebinp.com/raw/eccv9pgu")()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/CriticalLegendsCheetoHub/main/OpenSource"))()
+
 	end,
 	Menu = {
 		Information = function(self)
