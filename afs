@@ -2045,14 +2045,14 @@ do -- Example UI
 		Tab:AddButton("Deadtired Script", function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/pspboy08/dollhouse/main/AFSGUI.lua')))()
 		end)
+		Tab:AddButton("Shrawu GUI", function()
+		loadstring(game:HttpGet("https://paste.ee/r/W7jY4/0", true))()
+		end)
 		Tab:AddButton("GUI 4", function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/obeseinsect/roblox/main/Games/Anime%20Fighters%20Sim/AFS.lua"))()
 		end)
 		Tab:AddButton("GUI 5", function()
   		loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Scripts/main/anime%20fighter"))() 
-		end)
-		Tab:AddButton("Random GUI", function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/KBx8RCjR", true))()
 		end)
 		
 
