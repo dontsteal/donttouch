@@ -2058,9 +2058,6 @@ do -- Example UI
 		TabP:AddButton("SNXW Hub - INFINITE SPINS (#1)", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Web/main/scripts/SnxwHub.txt"))() 
 		end)
-		TabP:AddButton("NEW - INFINITE SPINS (AUTO RESET)", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/dontsteal/ok/main/onme"))();
-		end)
 
 		TabP:AddLabel("Press Unsave Data once you reach 0 spins")
 		TabP:AddLabel("Then rejoin your game, you'll have your spins back")
