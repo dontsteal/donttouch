@@ -2023,7 +2023,7 @@ function library:AddWindow(title, options)
 end
 
 do -- Example UI
-	local Window = library:AddWindow("Furk - Jailbreak", {
+	local Window = library:AddWindow("Furk - Bedwars", {
 		main_color = Color3.fromRGB(0, 0, 0),
 		min_size = Vector2.new(340, 220),
 		toggle_key = Enum.KeyCode.RightShift,
@@ -2037,14 +2037,12 @@ do -- Example UI
 		Tab:AddLabel("Make sure you are in a match before executing!")
 
 		Tab:AddButton("NEW - Vape Hub (#1)", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua'))()
+    		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() 
 		end)
     Tab:AddButton("Monkey Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua'))()
 		end)
-    Tab:AddButton("OP GUI", function()
-    loadstring(game:HttpGet('https://gist.githubusercontent.com/DeveloperMikey/2b8ee3d5a38c56c2cc1db72554850384/raw/bedwar.lua'))()
-		end)
+
 		
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
     
