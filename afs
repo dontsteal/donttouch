@@ -2025,22 +2025,39 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Anime Fighters Simulator", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(300, 270),
+		min_size = Vector2.new(270, 270),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
-	local Tab = Window:AddTab("Main")
+	local Tab = Window:AddTab("Side GUIs")
 
 	do -- Elements
 		Tab:AddLabel("Thanks For Using Furk Ultra!")
 		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
-		
-
-		Tab:AddButton("#1 - KJ Hub GUI", function()
-		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
+	
+		Tab:AddButton("GUI 1", function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/obeseinsect/roblox/main/Games/Anime%20Fighters%20Sim/AFS.lua"))()
 		end)
-		Tab:AddButton("OP - Zer0 Hub", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/GameScripts/6299805723.lua"))()
+		Tab:AddButton("GUI 2", function()
+  		loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Scripts/main/anime%20fighter"))() 
+		end)
+		
+		local Tab = Window:AddTab("Main GUIs")
+
+	do -- Elements
+		Tab:AddLabel("Thanks For Using Furk Ultra!")
+		Tab:AddLabel("~ Press Right Shift To Hide GUI ~")
+	
+	
+
+		Tab:AddButton("NEW #1 - Hoho Hub", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+		end)
+		Tab:AddButton("NEW OP - TinyTask Hub", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gohan9k/ANIMEFIGHTERS/main/GOHANSSJ3"))()
+		end)
+		Tab:AddButton("OP - KJ Hub GUI", function()
+		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
 		end)
 		Tab:AddButton("Deadtired Script", function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/pspboy08/dollhouse/main/AFSGUI.lua')))()
@@ -2048,16 +2065,13 @@ do -- Example UI
 		Tab:AddButton("Shrawu GUI", function()
 		loadstring(game:HttpGet("https://paste.ee/r/W7jY4/0", true))()
 		end)
-		Tab:AddButton("GUI 4", function()
-		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/obeseinsect/roblox/main/Games/Anime%20Fighters%20Sim/AFS.lua"))()
+		Tab:AddButton("Zer0 Hub (Requires key)", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/GameScripts/6299805723.lua"))()
 		end)
-		Tab:AddButton("GUI 5", function()
-  		loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Scripts/main/anime%20fighter"))() 
-		end)
-		
 
 	end
 
 	Tab:Show()
 	library:FormatWindows()
+end
 end
